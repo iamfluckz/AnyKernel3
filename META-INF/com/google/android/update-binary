@@ -472,24 +472,22 @@ if [ -f version ]; then
   ui_printfile version;
   ui_print " ";
 fi;
-ui_print "$$$$$$  $$$    $$ $$$$$$ $$$$$$ $$$     $$$ ";
-ui_print "  $$    $$$$   $$ $$       $$     $$   $$   ";
-ui_print "  $$    $$ $$  $$ $$$$$    $$      $$ $$    ";
-ui_print "  $$    $$  $$ $$ $$       $$     $$   $$   ";
-ui_print "$$$$$$  $$   $$$$ $$     $$$$$$ $$$     $$$ ";
-ui_print "|---------------By HELLINFIX---------------|";
+ui_print " ";
+ui_print "|------------------------------------------|";
+ui_print "|------------------------------------------|";
+ui_print "|-----------Fuq.Kernel By FFkz-------------|";
 ui_print "|------------------------------------------|";
 ui_print "|------------------------------------------|";
 ui_print "|   AnyKernel3 by osm0sis @ xda-developers |";
-ui_print "|------------------------------------------|";
-ui_print "|------------------------------------------|";
+ui_print " ";
 setup_env;
 
 do_devicecheck;
 do_versioncheck;
 do_levelcheck;
 
-ui_print "Installing...Wait";
+ui_print "Installing...";
+ui_print " ";
 CORE=$($BB grep -oE 'ak.*core.sh' anykernel.sh);
 [ -f tools/$CORE ] || $BB ln -s $AKHOME/tools/ak*-core.sh $AKHOME/tools/$CORE;
 PATH="$AKHOME/bin:$PATH" home=$AKHOME $BB ash anykernel.sh $2;
@@ -506,7 +504,9 @@ if [ "$(file_getprop anykernel.sh do.cleanup)" == 1 ]; then
   cleanup;
 fi;
 
-ui_print " " " " "Done!";
-ui_print " " " " "Enjoy the kernel! ";
-
+ui_print "Done !";
+ui_print " ";
+ui_print "Hope your device boot up, Enjoy! xD";
+ui_print " ";
+ui_print "Powered by FFkz.";
 
