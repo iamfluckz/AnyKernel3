@@ -12,6 +12,7 @@ do.cleanup=1
 do.cleanuponabort=0
 device.name1=spaced
 device.name2=RMX3151
+device.name2=RMX3286
 supported.versions=
 supported.patchlevels=
 '; } # end properties
