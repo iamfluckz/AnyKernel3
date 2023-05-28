@@ -4,7 +4,7 @@
 ## AnyKernel setup
 # begin properties
 properties() { '
-kernel.string=Cyanide_for_spaced
+kernel.string=Fuq.kernel_for_spaced
 do.devicecheck=1
 do.modules=0
 do.systemless=1
